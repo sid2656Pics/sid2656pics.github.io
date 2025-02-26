@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美观的按钮页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8e6ff, #d4a8ff); /* 更柔和的背景渐变 */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 50px 60px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            color: #3a3a3a;
+            font-weight: bold;
+        }
+
+        .button-grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        button {
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            color: white;
+        }
+
+        /* 第一层按钮样式 */
+        .family-button {
+            background: linear-gradient(135deg, #66b2ff, #3399ff); /* 蓝色渐变 */
+        }
+
+        .family-button:hover {
+            background: linear-gradient(135deg, #3399ff, #0066cc); /* 深蓝色渐变 */
+        }
+
+        /* 第二层按钮样式 */
+        .blog-button {
+            background: linear-gradient(135deg, #ff9966, #ff5e62); /* 橙红色渐变 */
+        }
+
+        .blog-button:hover {
+            background: linear-gradient(135deg, #ff5e62, #ff1a4d); /* 深红色渐变 */
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px;
+                border-radius: 15px;
+            }
+
+            button {
+                padding: 15px 35px;
+                font-size: 1.1rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>阳小良的个人链接</h1>
+    <div class="button-grid">
+        <!-- 第一层按钮 -->
+        <div class="button-row">
+            <a href="https://files.sid2656.space/parentBJ/">
+                <button class="family-button">父母来京</button>
+            </a>
+            <a href="family_photos2.html">
+                <button class="family-button">幸福时光</button>
+            </a>
+            <a href="family_photos3.html">
+                <button class="family-button">可爱桃桃</button>
+            </a>
+        </div>
+        <!-- 第二层按钮 -->
+        <div class="button-row">
+            <a href="https://files.sid2656.space">
+                <button class="blog-button">我的博客</button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
